@@ -49,6 +49,7 @@ export class AddMemberComponent implements OnInit {
       console.log("member: ",member)
       this.memberService.createMember(member).subscribe();
       console.log("Se a creado con exito")
+      this.router.navigate(['/members'])
     } catch{
       this.error = true;
       this.errorMessages = ['Error en la creacion.'];
