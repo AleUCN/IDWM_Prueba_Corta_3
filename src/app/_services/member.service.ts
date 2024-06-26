@@ -30,7 +30,7 @@ export class MemberService {
     return this.http.get<Member[]>(this.baseUrl + '/member');
   }
 
-  editMembers(editMember: CreateMember): Observable<Member[]>{
+  //editMembers(editMember: CreateMember): Observable<Member[]>{
     //return this.http.post<Member>(this.baseUrl + '/member', editMember);
-  }
+  //}
 }
