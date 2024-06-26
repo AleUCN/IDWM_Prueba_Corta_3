@@ -24,4 +24,8 @@ export class MemberListComponent implements OnInit {
   addMember():void{
     this.router.navigate(["members/add"])
   }
+
+  editMember(member: any):void{
+    this.router.navigate(["members/edit/"+member.id],{state: {data: member}})
+  }
 }
